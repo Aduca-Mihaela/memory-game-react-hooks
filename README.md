@@ -37,22 +37,26 @@ Jocul oferă o experiență interactivă unde utilizatorul întoarce cărți pen
 # Reducer
 - `gameReducer` — Gestionarea tuturor acțiunilor legate de joc: inițializare, întoarcere cărți, potrivire, resetare și numărare mutări.
 
- ### Structura Aplicației
-/src
-  /components
-    Card.jsx
-    GameBoard.jsx
-    ScorePanel.jsx
-  /hooks
-    useShuffleDeck.js
-    useMatchChecker.js
-    useGameStatus.js
-    useLocalStorageReducer.js
-  /reducer
-    gameReducer.js
-  App.jsx
-  App.css
-  index.js
+
+- **components/** — conține componentele funcționale pentru interfața utilizatorului:
+  - `Card.jsx` — componenta care reprezintă o carte de joc.
+  - `GameBoard.jsx` — tabla de joc unde sunt afișate toate cărțile.
+  - `ScorePanel.jsx` — afișează scorul și informațiile despre joc.
+
+- **hooks/** — conține hook-urile personalizate pentru logica aplicației:
+  - `useShuffleDeck.js` — hook pentru amestecarea cărților.
+  - `useMatchChecker.js` — hook care verifică dacă două cărți sunt pereche.
+  - `useGameStatus.js` — hook pentru gestionarea stării generale a jocului.
+  - `useLocalStorageReducer.js` — hook pentru sincronizarea reducer-ului cu `localStorage`.
+
+- **reducer/** — conține reducer-ul pentru gestionarea stării complexe a jocului:
+  - `gameReducer.js` — logica reducer-ului care actualizează starea jocului.
+
+- **App.jsx** — componenta principală care leagă toate componentele și hook-urile.
+- **App.css** — stilurile aplicației.
+- **index.js** — punctul de intrare al aplicației React.
+
+
 
 
 
