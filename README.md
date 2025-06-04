@@ -38,6 +38,11 @@ Jocul oferă o experiență interactivă unde utilizatorul întoarce cărți pen
 - `gameReducer` — Gestionarea tuturor acțiunilor legate de joc: inițializare, întoarcere cărți, potrivire, resetare și numărare mutări.
 
 
+
+
+
+### Structura Aplicației
+
 - **components/** — conține componentele funcționale pentru interfața utilizatorului:
   - `Card.jsx` — componenta care reprezintă o carte de joc.
   - `GameBoard.jsx` — tabla de joc unde sunt afișate toate cărțile.
