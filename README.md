@@ -53,6 +53,7 @@ Jocul oferă o experiență interactivă unde utilizatorul întoarce cărți pen
   - `useMatchChecker.js` — hook care verifică dacă două cărți sunt pereche.
   - `useGameStatus.js` — hook pentru gestionarea stării generale a jocului.
   - `useLocalStorageReducer.js` — hook pentru sincronizarea reducer-ului cu `localStorage`.
+  - `useTheme.js` — hook pentru gestionarea temei (dark/light mode) a aplicației.
 
 - **reducer/** — conține reducer-ul pentru gestionarea stării complexe a jocului:
   - `gameReducer.js` — logica reducer-ului care actualizează starea jocului.
@@ -60,19 +61,6 @@ Jocul oferă o experiență interactivă unde utilizatorul întoarce cărți pen
 - **App.jsx** — componenta principală care leagă toate componentele și hook-urile.
 - **App.css** — stilurile aplicației.
 - **index.js** — punctul de intrare al aplicației React.
-
-
-
-
-
-## Structura aplicației
-
-- `GameBoard.jsx` — Componenta principală care gestionează logica jocului folosind un **reducer** și hook-uri React.
-- `Card.jsx` — Componentă pentru reprezentarea fiecărei cărți.
-- `ScorePanel.jsx` — Afișează numărul de mutări, numărul de perechi potrivite și butonul de restart.
-- `useShuffleDeck.js` — Hook personalizat pentru crearea și reshuffle-ul deck-ului de cărți.
-- `useMatchChecker.js` — Hook personalizat care verifică dacă două cărți întoarse sunt potrivite și blochează tabla pe durata verificării.
-- `gameReducer.js` — Reducer pentru a gestiona starea jocului (cărtile, cărțile întoarse, mutările, potrivirile).
 
 ---
 
